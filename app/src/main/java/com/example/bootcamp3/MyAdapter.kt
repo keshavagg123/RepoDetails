@@ -5,8 +5,10 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class MyAdapter (val context:Context, val userList: List<MyDataItem>): RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     var listener: OnItemClickInteractionListener? = null
@@ -15,12 +17,13 @@ class MyAdapter (val context:Context, val userList: List<MyDataItem>): RecyclerV
 
          var nodeId: TextView
          var fullName: TextView
+         var img : ImageView
          var myDataItem : MyDataItem?= null
 
          init {
              nodeId = itemView.findViewById(R.id.nodeId)
              fullName = itemView.findViewById(R.id.fullName)
-
+             img = itemView.findViewById(R.id.image)
              /*itemView.setOnClickListener {
 
              }*/
@@ -30,6 +33,9 @@ class MyAdapter (val context:Context, val userList: List<MyDataItem>): RecyclerV
             this.myDataItem = myDataItem
             nodeId.text = myDataItem.name
             fullName.text = myDataItem.description
+
+            Glide.with(context).load(myDataItem.owner?.avatar_url).into(img)
+
             itemView.setOnClickListener {
                 listener?.onItemClick(myDataItem)
             }
