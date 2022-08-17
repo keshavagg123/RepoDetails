@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3373434"
+    >
 
 
     <TextView
@@ -16,6 +20,7 @@
         android:text="1"
         android:textStyle="bold"
         android:textSize="25dp"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -31,6 +36,7 @@
         android:text="2"
         android:textStyle="normal"
         android:textSize="15dp"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -46,6 +52,7 @@
         android:text="3"
         android:textStyle="normal"
         android:textSize="15dp"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -62,6 +69,7 @@
         android:text="4"
         android:textStyle="normal"
         android:textSize="15dp"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -79,8 +87,12 @@
         android:paddingRight="20dp"
         android:text="5"
         android:textStyle="normal"
-        android:textSize="15dp"
+        android:textSize="15sp"
+        android:textColor="#2196F3"
         />
+    <!--
+        android:drawableStart="@drawable/img"
+        android:drawablePadding="2dp"-->
 
     <TextView
         android:id="@+id/msg5"
@@ -98,6 +110,7 @@
         android:autoLink="web"
         android:textSize="15dp"
         android:textColorLink="#205DC6"
+        android:textColor="#2196F3"
         />
 
     <TextView
@@ -116,6 +129,7 @@
         android:textStyle="normal"
         android:textColorLink="#205DC6"
         android:textSize="15dp"
+        android:textColor="#2196F3"
         />
 
     <TextView
@@ -134,10 +148,11 @@
         android:textStyle="normal"
         android:textSize="15dp"
         android:textColorLink="#205DC6"
+        android:textColor="#2196F3"
         />
 
     <TextView
-        android:id="@+id/msg9"
+        android:id="@+id/msg8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,6 +167,46 @@
         android:textStyle="normal"
         android:textSize="15dp"
         android:textColorLink="#205DC6"
+        android:textColor="#2196F3"
         />
+
+    <TextView
+        android:id="@+id/msg9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/msg8"
+        android:layout_marginTop="30dp"
+        app:layout_goneMarginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="9"
+        android:autoLink="web"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:textColorLink="#205DC6"
+        android:textColor="#2196F3"
+        />
+
+    <TextView
+        android:id="@+id/msg10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/msg9"
+        android:layout_marginTop="30dp"
+        app:layout_goneMarginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:autoLink="web"
+        android:text="10"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:textColorLink="#205DC6"
+        android:textColor="#2196F3"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
