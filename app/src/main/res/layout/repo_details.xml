@@ -74,10 +74,13 @@
         android:layout_marginTop="30dp"
         app:layout_goneMarginTop="30dp"
         android:paddingLeft="20dp"
+        android:autoLink="web"
+        android:textColorLink="#205DC6"
         android:paddingRight="20dp"
         android:text="5"
         android:textStyle="normal"
         android:textSize="15dp"
+
         />
 
     <TextView
@@ -93,7 +96,9 @@
         android:paddingRight="20dp"
         android:text="6"
         android:textStyle="normal"
+        android:autoLink="web"
         android:textSize="15dp"
+        android:textColorLink="#205DC6"
         />
 
     <TextView
@@ -105,10 +110,12 @@
         app:layout_constraintTop_toBottomOf="@id/msg5"
         android:layout_marginTop="30dp"
         app:layout_goneMarginTop="30dp"
+        android:autoLink="web"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="7"
         android:textStyle="normal"
+        android:textColorLink="#205DC6"
         android:textSize="15dp"
         />
 
@@ -122,10 +129,30 @@
         android:layout_marginTop="30dp"
         app:layout_goneMarginTop="30dp"
         android:paddingLeft="20dp"
+        android:autoLink="web"
         android:paddingRight="20dp"
         android:text="8"
         android:textStyle="normal"
         android:textSize="15dp"
+        android:textColorLink="#205DC6"
+        />
+
+    <TextView
+        android:id="@+id/msg9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/msg7"
+        android:layout_marginTop="30dp"
+        app:layout_goneMarginTop="30dp"
+        android:paddingLeft="20dp"
+        android:autoLink="web"
+        android:paddingRight="20dp"
+        android:text="9"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:textColorLink="#205DC6"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

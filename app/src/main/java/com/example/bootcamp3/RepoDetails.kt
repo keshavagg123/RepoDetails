@@ -18,5 +18,6 @@ class RepoDetails : AppCompatActivity() {
         findViewById<TextView>(R.id.msg5).text = "DOWNLOADS_URL: " + repoData?.downloads_url.toString()
         findViewById<TextView>(R.id.msg6).text = "GIT_COMMITS_URL: " + repoData?.git_commits_url.toString()
         findViewById<TextView>(R.id.msg7).text = "COMMENTS_URL: " + repoData?.comments_url.toString()
+        findViewById<TextView>(R.id.msg9).text = "COMMITS_URL: " + repoData?.commits_url.toString()
     }
 }
