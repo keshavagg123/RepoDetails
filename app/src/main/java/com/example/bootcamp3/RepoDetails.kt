@@ -42,5 +42,8 @@ class RepoDetails : AppCompatActivity() {
         findViewById<TextView>(R.id.msg8).setOnClickListener { openWebPage(repoData?.commits_url.toString()) }
         findViewById<TextView>(R.id.msg9).setOnClickListener { openWebPage(repoData?.subscribers_url.toString()) }
         findViewById<TextView>(R.id.msg10).setOnClickListener { openWebPage(repoData?.subscription_url.toString()) }
+
+
+        //Toast.makeText(this,repoData?.id.toString(),Toast.LENGTH_LONG).show()
     }
 }

@@ -56,6 +56,6 @@ class MyAdapter (val context:Context, val userList: List<MyDataItem>): RecyclerV
     }
 }
 
-interface OnItemClickInteractionListener{
-    fun onItemClick(myDataItem: MyDataItem)
+interface OnItemClickInteractionListener{   //Interface created
+    fun onItemClick(myDataItem: MyDataItem)   // Method created
 }

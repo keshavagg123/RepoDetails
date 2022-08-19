@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), OnItemClickInteractionListener {
                 val responseBody = response?.body() !!
                 myAdapter = MyAdapter(baseContext, responseBody)
                 findViewById<RecyclerView>(R.id.recyclerview).adapter = myAdapter
-                myAdapter.listener = this@MainActivity
+                myAdapter.listener = this@MainActivity // initialize listener
 
             }
 
@@ -65,9 +65,9 @@ class MainActivity : AppCompatActivity(), OnItemClickInteractionListener {
         })
     }
 
-    override fun onItemClick(myDataItem: MyDataItem){
-        val intent = Intent(this, RepoDetails::class.java)
-        intent.putExtra(Constants.KEY_INTENT_DATA,myDataItem)
-        this.startActivity(intent)
+    override fun onItemClick(myDataItem: MyDataItem){   //current activity to target activity
+        val intent = Intent(this, RepoDetails::class.java)   //creating intent ... it will open repodetails class // this ... is main activity
+        intent.putExtra(Constants.KEY_INTENT_DATA,myDataItem)    // passing the data in the intent view (mydataitem)
+        this.startActivity(intent)    //triggering to start the intent
     }
 }
